@@ -4,10 +4,10 @@ This project demonstrates interacting with on-chain protocols (like Uniswap).
 
 Currently the following is demonstrated:
 
-- Forking off mainnet
-- Forking off of a fork of mainnet
-- Buying DAI with ETH from Uniswap
-- Checking ETH price in DAI from custom function in `MyDapp.sol` which extends off of `UniswapLiteBase` which uses Uniswap's on-chain contracts
+- Forking off Mainnet with [Ganache](https://github.com/trufflesuite/ganache-core)
+- Forking off of a fork of Mainnet to run tests in parallel (thanks to [Jest](https://jestjs.io/))
+- Buying DAI with ETH from [Uniswap](https://uniswap.exchange/)
+- Checking ETH price in DAI from custom function in [`MyDapp.sol`](./contracts/MyDapp.sol) which extends off of [`UniswapLiteBase.sol`](./contracts/UniswapLiteBase.sol) which uses Uniswap's on-chain contracts
 
 ## Usage
 
@@ -22,7 +22,7 @@ Currently the following is demonstrated:
    ```
 
    - Get an API key from: https://infura.io/
-   - Both of the private keys can be any private key you choose
+   - Both of the private keys can be any private key you choose:
      - `PRIV_KEY_DEPLOY` refers to an account specifically for deploying
      - `PRIV_KEY_TEST` refers to an account specifically for testing
 
